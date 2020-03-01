@@ -12,6 +12,7 @@ class Player
   end
 
   def put_coordinates
+    # adds the piece to the board
     coord = []
     loop do
       coord = ask_for_coordinates
@@ -27,6 +28,7 @@ class Player
   end
 
   def validate_coordinates_format(coord)
+    # returns true is the format of the input is valid
     if coord.is_a?(Array) && coord.size == 2
       true
     else
